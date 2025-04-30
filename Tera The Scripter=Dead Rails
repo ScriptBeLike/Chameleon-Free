@@ -1,0 +1,1079 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 118 | SCRIPTS: 11 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.BestHub \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["Name"] = [[BestHub]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+
+-- // StarterGui.BestHub.Hub \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39)
+UI["2"]["Size"] = UDim2.new(0.34023, 0, 0.49472, 0)
+UI["2"]["Position"] = UDim2.new(0.36046, 0, 0.32817, 0)
+UI["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["Name"] = [[Hub]]
+
+-- // StarterGui.BestHub.Hub.UICorner \\ --
+UI["3"] = Instance.new("UICorner", UI["2"])
+UI["3"]["CornerRadius"] = UDim.new(0, 18)
+
+-- // StarterGui.BestHub.Hub.UIStroke \\ --
+UI["4"] = Instance.new("UIStroke", UI["2"])
+UI["4"]["Color"] = Color3.fromRGB(60, 43, 76)
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["5"] = Instance.new("TextLabel", UI["2"])
+UI["5"]["TextWrapped"] = true
+UI["5"]["BorderSizePixel"] = 0
+UI["5"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["5"]["TextScaled"] = true
+UI["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["TextSize"] = 14
+UI["5"]["FontFace"] = Font.new([[rbxassetid://12187607287]], Enum.FontWeight.Light, Enum.FontStyle.Normal)
+UI["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["BackgroundTransparency"] = 1
+UI["5"]["Size"] = UDim2.new(0.40529, 0, 0.07667, 0)
+UI["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["Text"] = [[Chameleon]]
+UI["5"]["Position"] = UDim2.new(0.04185, 0, 0.03, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["6"] = Instance.new("UITextSizeConstraint", UI["5"])
+UI["6"]["MaxTextSize"] = 22
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["7"] = Instance.new("UIAspectRatioConstraint", UI["5"])
+UI["7"]["AspectRatio"] = 8
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["8"] = Instance.new("TextLabel", UI["2"])
+UI["8"]["TextWrapped"] = true
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["8"]["TextScaled"] = true
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["TextSize"] = 14
+UI["8"]["FontFace"] = Font.new([[rbxassetid://12187607287]], Enum.FontWeight.Light, Enum.FontStyle.Normal)
+UI["8"]["TextColor3"] = Color3.fromRGB(116, 42, 226)
+UI["8"]["BackgroundTransparency"] = 1
+UI["8"]["Size"] = UDim2.new(0.40529, 0, 0.07667, 0)
+UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["Text"] = [[I Free I]]
+UI["8"]["Position"] = UDim2.new(0.24051, 0, 0.03, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["9"] = Instance.new("UITextSizeConstraint", UI["8"])
+UI["9"]["MaxTextSize"] = 22
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["a"] = Instance.new("UIAspectRatioConstraint", UI["8"])
+UI["a"]["AspectRatio"] = 8
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["b"] = Instance.new("TextLabel", UI["2"])
+UI["b"]["TextWrapped"] = true
+UI["b"]["BorderSizePixel"] = 0
+UI["b"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["b"]["TextScaled"] = true
+UI["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b"]["TextSize"] = 14
+UI["b"]["FontFace"] = Font.new([[rbxassetid://12187607287]], Enum.FontWeight.Light, Enum.FontStyle.Normal)
+UI["b"]["TextColor3"] = Color3.fromRGB(109, 109, 109)
+UI["b"]["BackgroundTransparency"] = 1
+UI["b"]["Size"] = UDim2.new(0.40529, 0, 0.07, 0)
+UI["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b"]["Text"] = [[Server]]
+UI["b"]["Position"] = UDim2.new(0.11013, 0, 0.18333, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["c"] = Instance.new("UITextSizeConstraint", UI["b"])
+UI["c"]["MaxTextSize"] = 20
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["d"] = Instance.new("UIAspectRatioConstraint", UI["b"])
+UI["d"]["AspectRatio"] = 8.7619
+
+-- // StarterGui.BestHub.Hub.TextButton \\ --
+UI["e"] = Instance.new("TextButton", UI["2"])
+UI["e"]["TextWrapped"] = true
+UI["e"]["BorderSizePixel"] = 0
+UI["e"]["TextSize"] = 16
+UI["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e"]["TextScaled"] = true
+UI["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e"]["Size"] = UDim2.new(0.09251, 0, 0.07667, 0)
+UI["e"]["BackgroundTransparency"] = 1
+UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e"]["Text"] = [[Main]]
+UI["e"]["Position"] = UDim2.new(0.87445, 0, 0.03, 0)
+
+-- // StarterGui.BestHub.Hub.TextButton.UITextSizeConstraint \\ --
+UI["f"] = Instance.new("UITextSizeConstraint", UI["e"])
+UI["f"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextButton.UIAspectRatioConstraint \\ --
+UI["10"] = Instance.new("UIAspectRatioConstraint", UI["e"])
+UI["10"]["AspectRatio"] = 1.82609
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["11"] = Instance.new("ImageButton", UI["2"])
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["ImageTransparency"] = 1
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["11"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["11"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["Position"] = UDim2.new(0.12996, 0, 0.28333, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["12"] = Instance.new("UICorner", UI["11"])
+UI["12"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["13"] = Instance.new("UIStroke", UI["11"])
+UI["13"]["Thickness"] = 2
+UI["13"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["14"] = Instance.new("UIAspectRatioConstraint", UI["11"])
+
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["15"] = Instance.new("LocalScript", UI["11"])
+
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["16"] = Instance.new("ImageButton", UI["2"])
+UI["16"]["BorderSizePixel"] = 0
+UI["16"]["ImageTransparency"] = 1
+UI["16"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["16"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["16"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["16"]["Position"] = UDim2.new(0.12996, 0, 0.36666, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["17"] = Instance.new("UICorner", UI["16"])
+UI["17"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["18"] = Instance.new("UIStroke", UI["16"])
+UI["18"]["Thickness"] = 2
+UI["18"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["19"] = Instance.new("UIAspectRatioConstraint", UI["16"])
+
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["1a"] = Instance.new("LocalScript", UI["16"])
+
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["1b"] = Instance.new("ImageButton", UI["2"])
+UI["1b"]["BorderSizePixel"] = 0
+UI["1b"]["ImageTransparency"] = 1
+UI["1b"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["1b"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["1b"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1b"]["Position"] = UDim2.new(0.12996, 0, 0.45268, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["1c"] = Instance.new("UICorner", UI["1b"])
+UI["1c"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["1d"] = Instance.new("UIStroke", UI["1b"])
+UI["1d"]["Thickness"] = 2
+UI["1d"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["1e"] = Instance.new("UIAspectRatioConstraint", UI["1b"])
+UI["1e"]["AspectRatio"] = 1
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["1f"] = Instance.new("LocalScript", UI["1b"])
+
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["20"] = Instance.new("ImageButton", UI["2"])
+UI["20"]["BorderSizePixel"] = 0
+UI["20"]["ImageTransparency"] = 1
+UI["20"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["20"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["20"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["20"]["Position"] = UDim2.new(0.12996, 0, 0.53601, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["21"] = Instance.new("UICorner", UI["20"])
+UI["21"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["22"] = Instance.new("UIStroke", UI["20"])
+UI["22"]["Thickness"] = 2
+UI["22"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["23"] = Instance.new("UIAspectRatioConstraint", UI["20"])
+UI["23"]["AspectRatio"] = 1
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["24"] = Instance.new("LocalScript", UI["20"])
+
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["25"] = Instance.new("ImageButton", UI["2"])
+UI["25"]["BorderSizePixel"] = 0
+UI["25"]["ImageTransparency"] = 1
+UI["25"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["25"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["25"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["25"]["Position"] = UDim2.new(0.12996, 0, 0.62896, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["26"] = Instance.new("UICorner", UI["25"])
+UI["26"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["27"] = Instance.new("UIStroke", UI["25"])
+UI["27"]["Thickness"] = 2
+UI["27"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["28"] = Instance.new("UIAspectRatioConstraint", UI["25"])
+UI["28"]["AspectRatio"] = 1
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["29"] = Instance.new("LocalScript", UI["25"])
+
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["2a"] = Instance.new("ImageButton", UI["2"])
+UI["2a"]["BorderSizePixel"] = 0
+UI["2a"]["ImageTransparency"] = 1
+UI["2a"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["2a"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["2a"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["Position"] = UDim2.new(0.12996, 0, 0.71229, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["2b"] = Instance.new("UICorner", UI["2a"])
+UI["2b"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["2c"] = Instance.new("UIStroke", UI["2a"])
+UI["2c"]["Thickness"] = 2
+UI["2c"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["2d"] = Instance.new("UIAspectRatioConstraint", UI["2a"])
+UI["2d"]["AspectRatio"] = 1
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["2e"] = Instance.new("LocalScript", UI["2a"])
+
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["2f"] = Instance.new("TextLabel", UI["2"])
+UI["2f"]["TextWrapped"] = true
+UI["2f"]["BorderSizePixel"] = 0
+UI["2f"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["2f"]["TextScaled"] = true
+UI["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2f"]["TextSize"] = 14
+UI["2f"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2f"]["BackgroundTransparency"] = 1
+UI["2f"]["Size"] = UDim2.new(0.22907, 0, 0.05667, 0)
+UI["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2f"]["Text"] = [[Enable Esp Items]]
+UI["2f"]["Position"] = UDim2.new(0.19824, 0, 0.28333, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["30"] = Instance.new("UITextSizeConstraint", UI["2f"])
+UI["30"]["MaxTextSize"] = 14
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["31"] = Instance.new("UIAspectRatioConstraint", UI["2f"])
+UI["31"]["AspectRatio"] = 6.11765
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["32"] = Instance.new("TextLabel", UI["2"])
+UI["32"]["TextWrapped"] = true
+UI["32"]["BorderSizePixel"] = 0
+UI["32"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["32"]["TextScaled"] = true
+UI["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["32"]["TextSize"] = 14
+UI["32"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["32"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["32"]["BackgroundTransparency"] = 1
+UI["32"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["32"]["Text"] = [[WalkSpeed]]
+UI["32"]["Position"] = UDim2.new(0.19824, 0, 0.36333, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["33"] = Instance.new("UITextSizeConstraint", UI["32"])
+UI["33"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["34"] = Instance.new("UIAspectRatioConstraint", UI["32"])
+UI["34"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["35"] = Instance.new("TextLabel", UI["2"])
+UI["35"]["TextWrapped"] = true
+UI["35"]["BorderSizePixel"] = 0
+UI["35"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["35"]["TextScaled"] = true
+UI["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["35"]["TextSize"] = 14
+UI["35"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["35"]["BackgroundTransparency"] = 1
+UI["35"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["Text"] = [[Night]]
+UI["35"]["Position"] = UDim2.new(0.19824, 0, 0.45, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["36"] = Instance.new("UITextSizeConstraint", UI["35"])
+UI["36"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["37"] = Instance.new("UIAspectRatioConstraint", UI["35"])
+UI["37"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["38"] = Instance.new("TextLabel", UI["2"])
+UI["38"]["TextWrapped"] = true
+UI["38"]["BorderSizePixel"] = 0
+UI["38"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["38"]["TextScaled"] = true
+UI["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["38"]["TextSize"] = 14
+UI["38"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["38"]["BackgroundTransparency"] = 1
+UI["38"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["38"]["Text"] = [[Fps Boost]]
+UI["38"]["Position"] = UDim2.new(0.19824, 0, 0.53, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["39"] = Instance.new("UITextSizeConstraint", UI["38"])
+UI["39"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["3a"] = Instance.new("UIAspectRatioConstraint", UI["38"])
+UI["3a"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["3b"] = Instance.new("TextLabel", UI["2"])
+UI["3b"]["TextWrapped"] = true
+UI["3b"]["BorderSizePixel"] = 0
+UI["3b"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["3b"]["TextScaled"] = true
+UI["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3b"]["TextSize"] = 14
+UI["3b"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3b"]["BackgroundTransparency"] = 1
+UI["3b"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3b"]["Text"] = [[Auto Bond]]
+UI["3b"]["Position"] = UDim2.new(0.19824, 0, 0.62667, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["3c"] = Instance.new("UITextSizeConstraint", UI["3b"])
+UI["3c"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["3d"] = Instance.new("UIAspectRatioConstraint", UI["3b"])
+UI["3d"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["3e"] = Instance.new("TextLabel", UI["2"])
+UI["3e"]["TextWrapped"] = true
+UI["3e"]["BorderSizePixel"] = 0
+UI["3e"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["3e"]["TextScaled"] = true
+UI["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3e"]["TextSize"] = 14
+UI["3e"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3e"]["BackgroundTransparency"] = 1
+UI["3e"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3e"]["Text"] = [[Aimbot]]
+UI["3e"]["Position"] = UDim2.new(0.19824, 0, 0.71, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["3f"] = Instance.new("UITextSizeConstraint", UI["3e"])
+UI["3f"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["40"] = Instance.new("UIAspectRatioConstraint", UI["3e"])
+UI["40"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["41"] = Instance.new("TextLabel", UI["2"])
+UI["41"]["TextWrapped"] = true
+UI["41"]["BorderSizePixel"] = 0
+UI["41"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["41"]["TextScaled"] = true
+UI["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["41"]["TextSize"] = 14
+UI["41"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+UI["41"]["TextColor3"] = Color3.fromRGB(96, 96, 96)
+UI["41"]["BackgroundTransparency"] = 1
+UI["41"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["41"]["Text"] = [[I Bugged I]]
+UI["41"]["Position"] = UDim2.new(0.36564, 0, 0.62667, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["42"] = Instance.new("UITextSizeConstraint", UI["41"])
+UI["42"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["43"] = Instance.new("UIAspectRatioConstraint", UI["41"])
+UI["43"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["44"] = Instance.new("TextLabel", UI["2"])
+UI["44"]["TextWrapped"] = true
+UI["44"]["BorderSizePixel"] = 0
+UI["44"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["44"]["TextScaled"] = true
+UI["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["44"]["TextSize"] = 14
+UI["44"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+UI["44"]["TextColor3"] = Color3.fromRGB(88, 34, 169)
+UI["44"]["BackgroundTransparency"] = 1
+UI["44"]["Size"] = UDim2.new(0.14317, 0, 0.05, 0)
+UI["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["44"]["Text"] = [[TeraManIQ]]
+UI["44"]["Position"] = UDim2.new(0.48449, 0, 0.92124, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["45"] = Instance.new("UITextSizeConstraint", UI["44"])
+UI["45"]["MaxTextSize"] = 14
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["46"] = Instance.new("UIAspectRatioConstraint", UI["44"])
+UI["46"]["AspectRatio"] = 4.33333
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["47"] = Instance.new("TextLabel", UI["2"])
+UI["47"]["TextWrapped"] = true
+UI["47"]["BorderSizePixel"] = 0
+UI["47"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["47"]["TextScaled"] = true
+UI["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["47"]["TextSize"] = 14
+UI["47"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Medium, Enum.FontStyle.Normal)
+UI["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["47"]["BackgroundTransparency"] = 1
+UI["47"]["Size"] = UDim2.new(0.25551, 0, 0.05, 0)
+UI["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["47"]["Text"] = [[Youtube:]]
+UI["47"]["Position"] = UDim2.new(0.37022, 0, 0.92124, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["48"] = Instance.new("UITextSizeConstraint", UI["47"])
+UI["48"]["MaxTextSize"] = 14
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["49"] = Instance.new("UIAspectRatioConstraint", UI["47"])
+UI["49"]["AspectRatio"] = 7.73333
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["4a"] = Instance.new("TextLabel", UI["2"])
+UI["4a"]["TextWrapped"] = true
+UI["4a"]["BorderSizePixel"] = 0
+UI["4a"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["4a"]["TextScaled"] = true
+UI["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4a"]["TextSize"] = 14
+UI["4a"]["FontFace"] = Font.new([[rbxassetid://12187607287]], Enum.FontWeight.Light, Enum.FontStyle.Normal)
+UI["4a"]["TextColor3"] = Color3.fromRGB(109, 109, 109)
+UI["4a"]["BackgroundTransparency"] = 1
+UI["4a"]["Size"] = UDim2.new(0.40529, 0, 0.07, 0)
+UI["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["Text"] = [[Misc]]
+UI["4a"]["Position"] = UDim2.new(0.59471, 0, 0.18333, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["4b"] = Instance.new("UITextSizeConstraint", UI["4a"])
+UI["4b"]["MaxTextSize"] = 20
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["4c"] = Instance.new("UIAspectRatioConstraint", UI["4a"])
+UI["4c"]["AspectRatio"] = 8.7619
+
+-- // StarterGui.BestHub.Hub.UIGradient \\ --
+UI["4d"] = Instance.new("UIGradient", UI["2"])
+UI["4d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(187, 68, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))}
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["4e"] = Instance.new("TextLabel", UI["2"])
+UI["4e"]["TextWrapped"] = true
+UI["4e"]["BorderSizePixel"] = 0
+UI["4e"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["4e"]["TextScaled"] = true
+UI["4e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4e"]["TextSize"] = 14
+UI["4e"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4e"]["BackgroundTransparency"] = 1
+UI["4e"]["Size"] = UDim2.new(0.22907, 0, 0.05667, 0)
+UI["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4e"]["Text"] = [[Vfly]]
+UI["4e"]["Position"] = UDim2.new(0.61674, 0, 0.28, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["4f"] = Instance.new("UITextSizeConstraint", UI["4e"])
+UI["4f"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["50"] = Instance.new("UIAspectRatioConstraint", UI["4e"])
+UI["50"]["AspectRatio"] = 6.11765
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["51"] = Instance.new("TextLabel", UI["2"])
+UI["51"]["TextWrapped"] = true
+UI["51"]["BorderSizePixel"] = 0
+UI["51"]["TextXAlignment"] = Enum.TextXAlignment.Right
+UI["51"]["TextScaled"] = true
+UI["51"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["51"]["TextSize"] = 14
+UI["51"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["51"]["TextColor3"] = Color3.fromRGB(137, 137, 137)
+UI["51"]["BackgroundTransparency"] = 1
+UI["51"]["Size"] = UDim2.new(0.22907, 0, 0.05667, 0)
+UI["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["51"]["Text"] = [[2]]
+UI["51"]["Position"] = UDim2.new(0.68282, 0, 0.28333, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["52"] = Instance.new("UITextSizeConstraint", UI["51"])
+UI["52"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["53"] = Instance.new("UIAspectRatioConstraint", UI["51"])
+UI["53"]["AspectRatio"] = 6.11765
+
+-- // StarterGui.BestHub.Hub.TextButton \\ --
+UI["54"] = Instance.new("TextButton", UI["2"])
+UI["54"]["TextWrapped"] = true
+UI["54"]["BorderSizePixel"] = 0
+UI["54"]["TextSize"] = 14
+UI["54"]["TextColor3"] = Color3.fromRGB(189, 189, 189)
+UI["54"]["TextScaled"] = true
+UI["54"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60)
+UI["54"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["54"]["Size"] = UDim2.new(0.17841, 0, 0.05, 0)
+UI["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["54"]["Text"] = [[On]]
+UI["54"]["Position"] = UDim2.new(0.78855, 0, 0.36667, 0)
+
+-- // StarterGui.BestHub.Hub.TextButton.UICorner \\ --
+UI["55"] = Instance.new("UICorner", UI["54"])
+UI["55"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.BestHub.Hub.TextButton.UITextSizeConstraint \\ --
+UI["56"] = Instance.new("UITextSizeConstraint", UI["54"])
+UI["56"]["MaxTextSize"] = 14
+
+-- // StarterGui.BestHub.Hub.TextButton.UIAspectRatioConstraint \\ --
+UI["57"] = Instance.new("UIAspectRatioConstraint", UI["54"])
+UI["57"]["AspectRatio"] = 5.4
+
+-- // StarterGui.BestHub.Hub.TextButton.LocalScript \\ --
+UI["58"] = Instance.new("LocalScript", UI["54"])
+
+
+-- // StarterGui.BestHub.Hub.TextButton \\ --
+UI["59"] = Instance.new("TextButton", UI["2"])
+UI["59"]["TextWrapped"] = true
+UI["59"]["BorderSizePixel"] = 0
+UI["59"]["TextSize"] = 14
+UI["59"]["TextColor3"] = Color3.fromRGB(148, 148, 148)
+UI["59"]["TextScaled"] = true
+UI["59"]["BackgroundColor3"] = Color3.fromRGB(116, 42, 230)
+UI["59"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["59"]["Size"] = UDim2.new(0.1652, 0, 0.05, 0)
+UI["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["59"]["Text"] = [[Off]]
+UI["59"]["Position"] = UDim2.new(0.59471, 0, 0.36667, 0)
+
+-- // StarterGui.BestHub.Hub.TextButton.UICorner \\ --
+UI["5a"] = Instance.new("UICorner", UI["59"])
+UI["5a"]["CornerRadius"] = UDim.new(0, 20)
+
+-- // StarterGui.BestHub.Hub.TextButton.UITextSizeConstraint \\ --
+UI["5b"] = Instance.new("UITextSizeConstraint", UI["59"])
+UI["5b"]["MaxTextSize"] = 14
+
+-- // StarterGui.BestHub.Hub.TextButton.UIAspectRatioConstraint \\ --
+UI["5c"] = Instance.new("UIAspectRatioConstraint", UI["59"])
+UI["5c"]["AspectRatio"] = 5
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["5d"] = Instance.new("ImageButton", UI["2"])
+UI["5d"]["BorderSizePixel"] = 0
+UI["5d"]["ImageTransparency"] = 1
+UI["5d"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["5d"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["5d"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5d"]["Position"] = UDim2.new(0.61454, 0, 0.47333, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["5e"] = Instance.new("UICorner", UI["5d"])
+UI["5e"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["5f"] = Instance.new("UIStroke", UI["5d"])
+UI["5f"]["Thickness"] = 2
+UI["5f"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["60"] = Instance.new("UIAspectRatioConstraint", UI["5d"])
+UI["60"]["AspectRatio"] = 1
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["61"] = Instance.new("LocalScript", UI["5d"])
+
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["62"] = Instance.new("TextLabel", UI["2"])
+UI["62"]["TextWrapped"] = true
+UI["62"]["BorderSizePixel"] = 0
+UI["62"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["62"]["TextScaled"] = true
+UI["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["62"]["TextSize"] = 14
+UI["62"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["62"]["BackgroundTransparency"] = 1
+UI["62"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["62"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["62"]["Text"] = [[Ringta Ui]]
+UI["62"]["Position"] = UDim2.new(0.68282, 0, 0.47, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["63"] = Instance.new("UITextSizeConstraint", UI["62"])
+UI["63"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["64"] = Instance.new("UIAspectRatioConstraint", UI["62"])
+UI["64"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["65"] = Instance.new("ImageButton", UI["2"])
+UI["65"]["BorderSizePixel"] = 0
+UI["65"]["ImageTransparency"] = 1
+UI["65"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["65"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["65"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["65"]["Position"] = UDim2.new(0.61454, 0, 0.57333, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["66"] = Instance.new("UICorner", UI["65"])
+UI["66"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["67"] = Instance.new("UIStroke", UI["65"])
+UI["67"]["Thickness"] = 2
+UI["67"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["68"] = Instance.new("UIAspectRatioConstraint", UI["65"])
+UI["68"]["AspectRatio"] = 1
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["69"] = Instance.new("LocalScript", UI["65"])
+
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["6a"] = Instance.new("TextLabel", UI["2"])
+UI["6a"]["TextWrapped"] = true
+UI["6a"]["BorderSizePixel"] = 0
+UI["6a"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["6a"]["TextScaled"] = true
+UI["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6a"]["TextSize"] = 14
+UI["6a"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6a"]["BackgroundTransparency"] = 1
+UI["6a"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6a"]["Text"] = [[Dupe Ui]]
+UI["6a"]["Position"] = UDim2.new(0.68282, 0, 0.57, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["6b"] = Instance.new("UITextSizeConstraint", UI["6a"])
+UI["6b"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["6c"] = Instance.new("UIAspectRatioConstraint", UI["6a"])
+UI["6c"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.TextLabel \\ --
+UI["6d"] = Instance.new("TextLabel", UI["2"])
+UI["6d"]["TextWrapped"] = true
+UI["6d"]["BorderSizePixel"] = 0
+UI["6d"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["6d"]["TextScaled"] = true
+UI["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6d"]["TextSize"] = 14
+UI["6d"]["FontFace"] = Font.new([[rbxassetid://12187372629]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6d"]["BackgroundTransparency"] = 1
+UI["6d"]["Size"] = UDim2.new(0.22907, 0, 0.05333, 0)
+UI["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6d"]["Text"] = [[Infinite Yield]]
+UI["6d"]["Position"] = UDim2.new(0.68282, 0, 0.68, 0)
+
+-- // StarterGui.BestHub.Hub.TextLabel.UITextSizeConstraint \\ --
+UI["6e"] = Instance.new("UITextSizeConstraint", UI["6d"])
+UI["6e"]["MaxTextSize"] = 16
+
+-- // StarterGui.BestHub.Hub.TextLabel.UIAspectRatioConstraint \\ --
+UI["6f"] = Instance.new("UIAspectRatioConstraint", UI["6d"])
+UI["6f"]["AspectRatio"] = 6.5
+
+-- // StarterGui.BestHub.Hub.ImageButton \\ --
+UI["70"] = Instance.new("ImageButton", UI["2"])
+UI["70"]["BorderSizePixel"] = 0
+UI["70"]["ImageTransparency"] = 1
+UI["70"]["BackgroundColor3"] = Color3.fromRGB(20, 19, 28)
+UI["70"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["70"]["Size"] = UDim2.new(0.03524, 0, 0.05333, 0)
+UI["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["70"]["Position"] = UDim2.new(0.61454, 0, 0.68333, 0)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UICorner \\ --
+UI["71"] = Instance.new("UICorner", UI["70"])
+UI["71"]["CornerRadius"] = UDim.new(0, 3)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIStroke \\ --
+UI["72"] = Instance.new("UIStroke", UI["70"])
+UI["72"]["Thickness"] = 2
+UI["72"]["Color"] = Color3.fromRGB(36, 35, 45)
+
+-- // StarterGui.BestHub.Hub.ImageButton.UIAspectRatioConstraint \\ --
+UI["73"] = Instance.new("UIAspectRatioConstraint", UI["70"])
+UI["73"]["AspectRatio"] = 1
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+UI["74"] = Instance.new("LocalScript", UI["70"])
+
+
+-- // StarterGui.BestHub.Hub.UIAspectRatioConstraint \\ --
+UI["75"] = Instance.new("UIAspectRatioConstraint", UI["2"])
+UI["75"]["AspectRatio"] = 1.51333
+
+-- // StarterGui.BestHub.Hub.LocalScript \\ --
+UI["76"] = Instance.new("LocalScript", UI["2"])
+
+
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_15()
+local script = UI["15"]
+	local button = script.Parent
+	
+	local function Click()
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptBeLike/Esp-Items-Tera-Ver/refs/heads/main/Dead%20Rails%20v0.0.12"))()
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_15)
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_1a()
+local script = UI["1a"]
+	local button = script.Parent
+	
+	local function Click()
+		-- This LocalScript sets the Field of View (FOV) to 120
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+	
+		local player = game.Players.LocalPlayer
+		local camera = game.Workspace.CurrentCamera
+	
+		local function setFOV(fovValue)
+			camera.FieldOfView = fovValue
+		end
+	
+		setFOV(120)
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_1a)
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_1f()
+local script = UI["1f"]
+	local button = script.Parent
+	
+	local function Click()
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+	
+		local Lighting = game:GetService("Lighting")
+	
+		-- Function to set the lighting to night
+		local function setNight()
+			Lighting.TimeOfDay = "00:00:00"  -- Set time to midnight
+			Lighting.Ambient = Color3.fromRGB(10, 10, 30) -- Dark blue ambiance
+			Lighting.Brightness = 0.5 -- Lower brightness for night effect
+			Lighting.OutdoorAmbient = Color3.fromRGB(10, 10, 30) -- Set outdoor ambient lighting
+			Lighting.FogEnd = 100 -- Distance at which fog ends
+			Lighting.FogColor = Color3.fromRGB(0, 0, 0) -- Color of fog
+		end
+	
+		-- Set night initially
+		setNight()
+	
+		-- Loop indefinitely to keep it as night
+		while true do
+			wait(0.001) -- Although we don't need to loop, just keeping it here in case you want to add effects later
+			setNight() -- Ensures the night settings are applied in case any other scripts change them
+		end
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_1f)
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_24()
+local script = UI["24"]
+	local button = script.Parent
+	
+	local function Click()
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+	
+		-- Get a reference to the Lighting service
+		local Lighting = game:GetService("Lighting")
+	
+		-- Function to set Voxel lighting mode
+		local function setVoxelLighting()
+			-- Make sure Voxel is set
+			Lighting:ClearAllChildren()  -- Clear existing objects if needed
+			Lighting.Ambient = Color3.new(1, 1, 1) -- You can customize this color
+			Lighting.ColorShift_Bottom = Color3.new(1, 1, 1) -- You can customize this color
+			Lighting.ColorShift_Top = Color3.new(1, 1, 1) -- You can customize this color
+			Lighting.OutdoorAmbient = Color3.new(1, 1, 1) -- You can customize this color
+	
+			Lighting.Brightness = 2 -- Adjust the brightness as needed
+			Lighting.ExposureCompensation = 0 -- Adjust the exposure if necessary
+			Lighting.GlobalShadows = false
+	
+			-- Set the technology to Voxel
+			Lighting.Technology = Enum.Technology.Voxel
+		end
+	
+		-- Call the function to set the Voxel lighting
+		setVoxelLighting()
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_24)
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_29()
+local script = UI["29"]
+	local button = script.Parent
+	
+	local function Click()
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+	
+		local TweenService = game:GetService("TweenService")
+		local Players = game:GetService("Players")
+		local SoundService = game:GetService("SoundService")
+	
+		-- Define the Sound ID
+		local soundId = "rbxassetid://9059725878"
+	
+		-- Creating the pop-up text GUI function
+		local function createPopupText(bonds)
+			local screenGui = Instance.new("ScreenGui", Players.LocalPlayer:WaitForChild("PlayerGui"))
+			local textLabel = Instance.new("TextLabel")
+	
+			textLabel.Size = UDim2.new(0, 300, 0, 100)
+			textLabel.Position = UDim2.new(0.5, -150, 0.5, -50)
+			textLabel.Text = "Bonds Collected: +" .. bonds
+			textLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- White text
+			textLabel.BackgroundTransparency = 1 -- Transparent background
+			textLabel.Font = Enum.Font.Montserrat
+			textLabel.TextScaled = true -- Automatically scales the text
+			textLabel.TextStrokeTransparency = 0.5 -- Stroke effect
+			textLabel.TextStrokeColor3 = Color3.fromRGB(0, 0, 0) -- Stroke color (black)
+			textLabel.Parent = screenGui
+	
+			-- Fade out effect
+			local tweenOut = TweenService:Create(textLabel, TweenInfo.new(1, Enum.EasingStyle.Linear), {TextTransparency = 1})
+			tweenOut:Play()
+			tweenOut.Completed:Wait() -- Wait for the tween to complete
+			screenGui:Destroy() -- Remove the GUI after display
+		end
+	
+		local player = Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		-- Define target position and tween info
+		local targetCFrame = CFrame.new(-424, 30, -49041)
+		local tweenInfo = TweenInfo.new(110, Enum.EasingStyle.Linear)
+		local tween = TweenService:Create(character.HumanoidRootPart, tweenInfo, {CFrame = targetCFrame})
+	
+		-- Function to reset player character (cause player to die)
+		local function resetCharacter()
+			humanoid.Health = 0 -- Causes the player to die and respawn
+		end
+	
+		-- Play the tween
+		tween:Play()
+	
+		-- Function to display pop-up text every 3 seconds and play sound every 2 seconds
+		local function displayNotifications()
+			while humanoid.Health > 0 do -- While the player is alive
+				local bonds = math.random(1, 3) -- Randomly generate 1, 2, or 3
+				createPopupText(bonds)
+				wait(3) -- Wait for pop-up
+	
+				-- Play sound
+				local sound = Instance.new("Sound")
+				sound.SoundId = soundId
+				sound.Parent = SoundService
+				sound:Play()
+				wait(2) -- Wait for 2 seconds before the next pop-up or sound
+			end
+		end
+	
+		-- Start displaying notifications
+		local popUpThread = coroutine.create(displayNotifications)
+		coroutine.resume(popUpThread)
+	
+		-- Wait for 50 seconds, then reset the character and stop the tween
+		wait(50)
+		resetCharacter()
+		tween:Cancel() -- Stops the tween when the player dies
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_29)
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_2e()
+local script = UI["2e"]
+	local button = script.Parent
+	
+	local function Click()
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+		
+		local gray = "model_runner not found"
+		
+		print(gray)
+	
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_2e)
+-- // StarterGui.BestHub.Hub.TextButton.LocalScript \\ --
+local function SCRIPT_58()
+local script = UI["58"]
+	local button = script.Parent
+	
+	local function Click()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ScpGuest666/Random-Roblox-script/refs/heads/main/Roblox%20Vehicle%20Fly%20Gui%20script'))()
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_58)
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_61()
+local script = UI["61"]
+	local button = script.Parent
+	
+	local function Click()
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ringtaa/deadrailsui.github.io/refs/heads/main/RINGTA.LUA"))()
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_61)
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_69()
+local script = UI["69"]
+	local button = script.Parent
+	
+	local function Click()
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptBeLike/Tera-The-Scripter-Deadrails/refs/heads/main/DUPE%20BOND%2CGOLD%2CAMMO"))()
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_69)
+-- // StarterGui.BestHub.Hub.ImageButton.LocalScript \\ --
+local function SCRIPT_74()
+local script = UI["74"]
+	local button = script.Parent
+	
+	local function Click()
+		local purple = script.Parent
+	
+		purple.BackgroundColor3 = Color3.fromRGB(115, 41, 229)
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end
+	
+	button.MouseButton1Down:Connect(Click)
+end
+task.spawn(SCRIPT_74)
+-- // StarterGui.BestHub.Hub.LocalScript \\ --
+local function SCRIPT_76()
+local script = UI["76"]
+	local drag = script.Parent
+	
+	drag.Active = true
+	drag.Draggable = true
+end
+task.spawn(SCRIPT_76)
+
+return UI["1"], require;
